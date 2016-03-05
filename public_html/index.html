@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Maciej Klimczyk - formularz</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+        <div id="zawartosc">
+            <div class="pasek">
+                <div id="powitanie">
+                    <h1>
+                        Ankieta osobowa
+                    </h1>
+                </div>
+            </div>
+            <div id="formularz">
+                <form action="index.html" method="get">
+                    <div id="dane_konta">
+                        <label for="login">Login:</label>
+                        <input type="text" id="login" name="login" maxlength="20" required=""><br />
+
+                        <label for="pass">Hasło:</label>
+                        <input type="password" id="pass" name="pass" maxlength="20" required=""><br />
+
+                        <label for="pass2">Powtórz hasło:</label>
+                        <input type="password" id="pass2" name="pass2" maxlength="20" required=""><br />
+                    </div>
+                    <div id="dane_personalne">
+                        <label for="pesel">Pesel:</label>
+                        <input type="text" id="pesel" name="pesel" maxlength="11" pattern="[0-9]{11}" required=""><br />
+
+                        <label for="nazwisko">Nazwisko:</label>
+                        <input type="text" id="nazwisko" name="nazwisko" maxlength="50" required=""><br />
+
+                        <label for="imie">Imię:</label>
+                        <input type="text" id="imie" name="imie" maxlength="30" required=""><br />
+
+                        <label for="nr_dowodu">Numer dowodu:</label>
+                        <input type="text" id="nr_dowodu" name="nr_dowodu" maxlength="9" required=""><br />
+
+                        <label>Płeć:</label>
+                        <input type="radio" name="plec" id="mezczyzna" value="mezczyzna" required="">
+                        <label for="mezczyzna">mężczyzna</label>
+                        <input type="radio" name="plec" id="kobieta" value="kobieta" required="">
+                        <label for="kobieta">kobieta</label>
+                        <br />
+                    </div>
+                    <div id="dane_adresowe">
+                        <label for="kod_pocztowy">Kod pocztowy:</label>
+                        <input type="text" id="kod_pocztowy" name="kod_pocztowy" pattern="[0-9]{2}-[0-9]{3}" maxlength="6" required=""><br />
+
+                        <label for="miejscowosc">Miejscowość:</label>
+                        <textarea id="miejscowosc" name="miejscowosc" maxlength="50" rows="1" required="" placeholder="Podaj miejscowość"></textarea><br />
+
+                        <label for="ulica">Ulica:</label>
+                        <textarea id="ulica" name="ulica" maxlength="50" rows="1" placeholder="Podaj ulicę (opcjonalne)"></textarea><br />
+
+                        <label for="nr_domu">Numer domu:</label>
+                        <input type="text" id="nr_domu" name="nr_domu" maxlength="5" required=""><br />
+
+                        <label for="nr_lokalu">Numer lokalu:</label>
+                        <input type="text" id="nr_lokalu" name="nr_lokalu" maxlength="5"><br />
+
+                        <label for="wojewodztwo">Województwo:</label>
+                        <select id="wojewodztwo" name="wojewodztwo" required="">
+                            <option value=""></option>
+                            <option value="dolnoslaskie">Dolnośląskie</option>
+                            <option value="kujawsko_pomorskie">Kujawsko-pomorskie</option>
+                            <option value="lubelskie">Lubelskie</option>
+                            <option value="lubuskie">Lubuskie</option>
+                            <option value="lodzkie">Łódzkie</option>
+                            <option value="malopolskie">Małopolskie</option>
+                            <option value="mazowieckie">Mazowieckie</option>
+                            <option value="opolskie">Opolskie</option>
+                            <option value="podkarpackie">Podkarpackie</option>
+                            <option value="podlaskie">Podlaskie</option>
+                            <option value="pomorskie">Pomorskie</option>
+                            <option value="slaskie">Śląskie</option>
+                            <option value="swietokrzyskie">Świętokrzyskie</option>
+                            <option value="warminsko_mazurskie">Warmińsko-mazurskie</option>
+                            <option value="wielkopolskie">Wielkopolskie</option>
+                            <option value="zachodniopomorskie">Zachodniopomorskie</option>
+                        </select><br />
+
+                        <label for="email">Adres e-mail:</label>
+                        <textarea id="email" name="email" maxlength="50" rows="1" required="" placeholder="Wprowadź adres e-mail"></textarea>
+                    </div>
+                    <div id="ankieta">
+                        <label>Informację o kursach mam z:</label>
+                        <input type="checkbox" name="kurs[]" id="www" value="www" required="">
+                        <label for="www" class="">Strona WWW</label>
+                        
+                        <input type="checkbox" name="kurs[]" id="internet" value="internet" required="">
+                        <label for="internet">Internet</label>
+                        
+                        <input type="checkbox" name="kurs[]" id="prasa" value="prasa" required="">
+                        <label for="prasa">Prasa</label>
+                        
+                        <input type="checkbox" name="kurs[]" id="znajomi" value="znajomi" required="">
+                        <label for="znajomi">Znajomi</label>
+                        <br />
+                    </div>
+                    <div id="przyciski">
+                        <button type="submit">Wyślij</button>
+			<button type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+            <div id="stopka">
+                <p>
+                    &copy; Maciej Klimczyk - PWSZ 2013-2017
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+html body {
+    width: 960px;
+    margin: 0 auto;
+    background: url('../images/tlo.jpg');
+    font-family: Verdana, Tahoma, Arial;
+}
+html body br {
+    clear: both;
+}
+
+#zawartosc {
+    background: #fff;
+    min-height: 400px;
+    margin: 50px 0;
+}
+
+.pasek {
+    cursor: default;
+    height: 50px;
+    background: #cc3927; /* Old browsers */
+    background: -moz-linear-gradient(top,  #cc3927 0%, #832315 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cc3927), color-stop(100%,#832315)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #cc3927 0%,#832315 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #cc3927 0%,#832315 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #cc3927 0%,#832315 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #cc3927 0%,#832315 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc3927', endColorstr='#832315',GradientType=0 ); /* IE6-9 */
+    text-align: right;
+    padding-right: 10px;
+}
+
+.pasek #powitanie {
+    line-height: 50px;
+    color: #fff;
+}
+
+#formularz {
+    margin: 5px;
+}
+
+#dane_konta, #dane_personalne, #dane_adresowe, #ankieta {
+    border: 1px solid #B4AFA0;
+    margin: 10px 0;
+    padding: 10px;
+    background: #DCDAD3;
+}
+
+#stopka {
+    height: 50px;
+    text-align: right;
+    background-color: #B5B0A1;
+    padding-right: 10px;
+}
+
+#stopka p {
+    line-height: 50px;
+}
+
+label {
+    width: 150px;
+    float: left;
+    margin: 5px 0px;
+}
+
+#ankieta label, #mezczyzna label, #kobieta label {
+    float: left;
+    margin: 0px 0px;
+}
+
+#ankieta input, #mezczyzna, #kobieta {
+    float: left;
+    margin: 5px 0px;
+    margin-right: 10px;
+}
